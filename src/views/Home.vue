@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="min-h-screen w-full bg-gray-900 text-gray-300 flex flex-col items-center">
+    <div class="">
+    <h1 class="text-6xl font-semibold pt-32 pb-12">Crypto Plateform</h1>
+    <CoinTable />
+    </div>
   </div>
 </template>
 
 <script>
+
+import CoinTable from '../components/coinTable.vue';
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
+  data () {
+    return {
+
+    }
+  },
   components: {
-    HelloWorld
-  }
+    CoinTable
+  },
+  methods: {
+  },
+  computed: {
+
+  },
+ 
 }
 </script>
